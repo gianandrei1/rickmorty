@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'rick';
+    src: url('get_schwifty.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(BCKGROUND.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav ul {
+    display: flex;
+}
+
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: rick;
+    
+}
+
+.logn-btn{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: white;
+    background-image: linear-gradient(45deg, #00FF80, #20004D);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+}
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+
+}
+.content h1 {
+    font-size: 80px;
+    background: linear-gradient(135deg, #000000, #006400);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: rick;
+    
+
+}
+
+.content p{
+    margin: 10px 0 30px;
+    color: white;
+    animation-delay: 0.5s;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.feature-img{
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+
+}
+
+.feature-img.anim{
+    animation-delay: 1.5s;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1s linear forwards;
+    
+
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
